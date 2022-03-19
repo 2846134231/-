@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+	int i,sum=0;
+	char ch[1000];
+	printf("输入一串英文句子");
+	gets(ch);
+	for(i=0;ch[i]!='\0';i++)
+	{
+		
+		if(ch[i]=='i')
+		{
+			if(ch[i+1]=='t')
+			{
+				sum++;
+			}
+		}
+	}
+	printf("有%d个it",sum);
+	return 0;
+}
